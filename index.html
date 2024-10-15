@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            MY PROJECT
+        </title>
+        <style>
+            *{
+                box-sizing: border-box;
+                margin: 0px;
+                padding: 0px;
+            }
+.hel1{
+    width: 300px;
+height: 50px;
+margin-bottom: 10px;
+margin-top: 20px;
+border-radius: 5px;
+border:2px solid grey;
+color: grey;
+padding-left: 15px;
+}
+.new{
+    margin-top: 20px;
+    margin-left: 70px;
+}
+.hel2{
+    margin-top: 20px;
+    margin-left: 70px;
+}
+.hel3{
+    margin-top: 20px;
+    margin-left: 70px;
+}
+.in1{
+    width: 300px;
+height: 50px;
+padding-left:15px ;
+margin-bottom: 10px;
+border-radius: 5px;
+border:2px solid grey;
+}
+.in2{
+    width: 100px;
+    margin-left: 100px;
+height: 40px;
+background-color: rgb(96, 199, 96);
+border-radius: 5px;
+border:2px solid grey;
+
+}
+.body{
+    background-color: aquamarine;
+}
+.full1{
+    background-color: white;
+    width: 500px;
+    height: 300px;
+    border-radius: 5px;
+border:1px solid grey;
+box-shadow:2px 3px 2px 2px rgb(198, 192, 192);
+margin-top: 15px;
+margin-left: 15px;
+}
+.full{
+    display: flex;
+}
+.full2{
+    margin-left: 100px;
+    margin-top: 30px;
+    display: flex;
+}
+.helo{
+    margin-left: 20px;
+}
+.helo1{
+    display: flex;
+    
+}
+.helo2{
+    margin-bottom: 30px;
+    margin-right: 20px;
+    border-radius: 10px;
+    width:50%;
+}
+body{
+    background-image:linear-gradient(30deg, sandybrown,grey);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    
+}
+h1{
+    color: black;
+    text-align: center;
+    margin-bottom: 40px;
+}
+        </style>
+    </head>
+    <body>
+        <h1>
+            Create your account
+        </h1>
+        <div class="full">
+        <div class="full1">
+            <div class="new">
+        <textarea class="hel1" id="ash0" placeholder="Enter the paragraph"></textarea>
+        </div>
+        <div class="hel2">
+        <input type="text" class="in1" id="ash1" placeholder="Enter the image URL">
+    </div>
+        <div class="hel3">
+        <input type="submit" value="submit" class="in2" onclick="mi1()">
+        </div>
+        </div>
+        <div class="full2">
+            <div id="a">
+            
+            </div>
+            <table id="b" class="helo">
+
+            </table>
+            <div id="b1" class="helo">
+
+            </div>
+            
+        </div>
+</div>
+<script>
+    function mi1(){
+        para2=document.createElement('div');
+        y=document.getElementById('ash1').value;
+    para1=document.createElement('img');
+    para1.classList.add('helo2');
+    para1.src=y;
+    para2.appendChild(para1);
+
+        x=document.getElementById('ash0').value;
+
+       
+        para=document.createElement('p');
+        para.textContent=x;
+     para2.appendChild(para);
+        para2.classList.add('helo1');
+        document.getElementById('a').appendChild(para2);
+    
+    }
+
+</script>
+    </body>
+</html>
